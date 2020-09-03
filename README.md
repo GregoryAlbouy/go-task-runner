@@ -3,12 +3,13 @@
 A Go task runner that allows to execute a list of functions with custom hooks and intervals between each call.  
 It features two main methods: `*Program.Run()` and `*Program.RunConc(n int)`. The latter dispatches the work among n runners (goroutines), resulting in a huge boost of speed (details on the docs, comparison below)
 
-Full documentation: https://godoc.org/github.com/GregoryAlbouy/go-task-runner
+Full documentation: :point_right: [GoDoc](https://pkg.go.dev/github.com/gregoryalbouy/go-task-runner?tab=doc)
 
-
-### Installation
+## Installation
 
 `go get -u github.com/gregoryalbouy/go-task-runner`
+
+## Usage
 
 ### Basic example
 
@@ -78,6 +79,7 @@ results: [task0 task1 task2]
 
 ```
 ## Run() / RunConc() benchmarks
+
 Based on `/runner_test.go/Benchmark `and `/runner_test.go/BenchmarkConc`:
 * Run(): 35.649s
 * RunConc(2): 18.152s
@@ -87,6 +89,7 @@ Based on `/runner_test.go/Benchmark `and `/runner_test.go/BenchmarkConc`:
 * RunConc(1000): 6.679s
 
 ## Todo
+
 - package description
 - error handling
 - better test coverage for RunConc()
