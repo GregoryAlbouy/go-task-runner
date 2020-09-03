@@ -1,3 +1,6 @@
+![Go Report Card](https://goreportcard.com/badge/github.com/gregoryalbouy/go-task-runner)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/gregoryalbouy/go-task-runner)](https://pkg.go.dev/github.com/gregoryalbouy/go-task-runner)
+  
 # go-task-runner
 
 A Go task runner that allows to execute a list of functions with custom hooks and intervals between each call.  
